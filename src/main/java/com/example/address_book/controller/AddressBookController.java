@@ -59,10 +59,6 @@ public class AddressBookController {
 
     }
 
-
-
-
-
     @GetMapping("/getuserdto")
     public ResponseEntity<ResponseDto> findAnUserInDto(@RequestParam(value = "addressBookId")
                                                                           UUID addressBookId){
