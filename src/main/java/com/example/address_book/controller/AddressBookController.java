@@ -30,7 +30,7 @@ public class AddressBookController {
                                                   BindingResult bindingResult){
         if(bindingResult.hasErrors()){
               return new ResponseEntity<ResponseDto>(new ResponseDto(bindingResult.getAllErrors().
-                                                     get(0).getDefaultMessage(),"101",null),
+                                                     get(0).getDefaultMessage(),"100",null),
                                                      HttpStatus.BAD_REQUEST);
         }
 
@@ -47,7 +47,7 @@ public class AddressBookController {
                                                   BindingResult bindingResult){
         if(bindingResult.hasErrors()){
             return new ResponseEntity<ResponseDto>(new ResponseDto(bindingResult.getAllErrors().
-                    get(0).getDefaultMessage(),"101",null),
+                    get(0).getDefaultMessage(),"100",null),
                     HttpStatus.BAD_REQUEST);
         }
 
@@ -121,7 +121,7 @@ public class AddressBookController {
 
         if (bindingResult.hasErrors()){
             return new ResponseEntity<ResponseDto>(new ResponseDto(bindingResult.getAllErrors().
-                    get(0).getDefaultMessage(),"101",null),
+                    get(0).getDefaultMessage(),"100",null),
                     HttpStatus.BAD_REQUEST);
 
         }
@@ -139,7 +139,7 @@ public class AddressBookController {
 
         if (bindingResult.hasErrors()){
             return new ResponseEntity<ResponseDto>(new ResponseDto(bindingResult.getAllErrors().
-                    get(0).getDefaultMessage(),"101",null),
+                    get(0).getDefaultMessage(),"100",null),
                     HttpStatus.BAD_REQUEST);
 
         }
